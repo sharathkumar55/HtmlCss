@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+  <div  class="wrapper">
+    <div class="navbar">
+        <img src="logo2.png" class="logo"> 
+        <img src="menu.png" class="menu" onclick="togglemenu()">
+        <ul id="menuList">
+            <li><a href="#" target="_blank">HOME</a></li>
+            <li><a href="aboutme.html" target="_blank">ABOUT ME</a></li>
+            <li><a href="contactme.html" target="_blank">CONTACT ME</a></li>
+            <li><a href="mygallery.html" target="_blank">My Gallery</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Design Your Software</h1>
+        <p>Subscribe to zemoso to build best products</p>
+    </div>
+    </div>
+    <p id="test">hey</p>
+    
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight= "0px";
+        function togglemenu()
+        {
+            console.log(window.getComputedStyle(menuList).display);
+            if( window.getComputedStyle(menuList).display=="none")
+            {
+                
+                menuList.style.display="inline-block";
+
+            }
+            else
+            {
+                menuList.style.display="none";
+
+            }
+        }
+    </script>
+</body>
+</html>

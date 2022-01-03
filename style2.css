@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    background-image: url(aboutmebg.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.about
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%); /* matter in center */
+    font-size:x-large;
+    color: white;
+}
